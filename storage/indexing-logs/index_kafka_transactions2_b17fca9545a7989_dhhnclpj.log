@@ -1,0 +1,498 @@
+2020-05-13T04:37:30,883 INFO [main] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2020-05-13T04:37:32,488 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-histogram], jars: druid-histogram-0.17.0.jar
+2020-05-13T04:37:32,493 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-datasketches], jars: druid-datasketches-0.17.0.jar, commons-math3-3.6.1.jar
+2020-05-13T04:37:32,495 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-lookups-cached-global], jars: mapdb-1.0.8.jar, druid-lookups-cached-global-0.17.0.jar
+2020-05-13T04:37:32,498 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [postgresql-metadata-storage], jars: postgresql-metadata-storage-0.17.0.jar, postgresql-42.2.8.jar
+2020-05-13T04:37:32,501 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-kafka-indexing-service], jars: druid-kafka-indexing-service-0.17.0.jar, lz4-java-1.6.0.jar, kafka-clients-2.2.1.jar, zstd-jni-1.3.3-1.jar, snappy-java-1.1.7.2.jar
+2020-05-13T04:37:33,023 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-histogram], jars: druid-histogram-0.17.0.jar
+2020-05-13T04:37:33,036 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-datasketches], jars: druid-datasketches-0.17.0.jar, commons-math3-3.6.1.jar
+2020-05-13T04:37:33,060 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-lookups-cached-global], jars: mapdb-1.0.8.jar, druid-lookups-cached-global-0.17.0.jar
+2020-05-13T04:37:33,066 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [postgresql-metadata-storage], jars: postgresql-metadata-storage-0.17.0.jar, postgresql-42.2.8.jar
+2020-05-13T04:37:33,071 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-kafka-indexing-service], jars: druid-kafka-indexing-service-0.17.0.jar, lz4-java-1.6.0.jar, kafka-clients-2.2.1.jar, zstd-jni-1.3.3-1.jar, snappy-java-1.1.7.2.jar
+2020-05-13T04:37:36,050 INFO [main] org.apache.curator.utils.Compatibility - Running in ZooKeeper 3.4.x compatibility mode
+2020-05-13T04:37:36,395 INFO [main] org.apache.druid.server.emitter.EmitterModule - Using emitter [NoopEmitter{}] for metrics and alerts, with dimensions [{version=0.17.0}].
+2020-05-13T04:37:38,031 INFO [main] org.apache.druid.server.metrics.MetricsModule - Loaded 3 monitors: org.apache.druid.java.util.metrics.JvmMonitor, org.apache.druid.query.ExecutorServiceMonitor, org.apache.druid.server.initialization.jetty.JettyServerModule$JettyMonitor
+2020-05-13T04:37:38,044 INFO [main] org.apache.druid.cli.CliPeon - Starting up with processors[7], memory[1,029,177,344], maxMemory[1,029,177,344], directMemory[3,221,225,472]. Properties follow.
+2020-05-13T04:37:38,046 INFO [main] org.apache.druid.cli.CliPeon - * awt.toolkit: sun.awt.X11.XToolkit
+2020-05-13T04:37:38,046 INFO [main] org.apache.druid.cli.CliPeon - * druid.coordinator.balancer.strategy: cachingCost
+2020-05-13T04:37:38,046 INFO [main] org.apache.druid.cli.CliPeon - * druid.emitter: noop
+2020-05-13T04:37:38,047 INFO [main] org.apache.druid.cli.CliPeon - * druid.emitter.logging.logLevel: debug
+2020-05-13T04:37:38,047 INFO [main] org.apache.druid.cli.CliPeon - * druid.extensions.loadList: ["druid-histogram", "druid-datasketches", "druid-lookups-cached-global", "postgresql-metadata-storage", "druid-kafka-indexing-service"]
+2020-05-13T04:37:38,047 INFO [main] org.apache.druid.cli.CliPeon - * druid.host: 172.19.0.9
+2020-05-13T04:37:38,047 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.fork.property.druid.processing.buffer.sizeBytes: 268435456
+2020-05-13T04:37:38,047 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.logs.directory: /opt/data/indexing-logs
+2020-05-13T04:37:38,047 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.logs.type: file
+2020-05-13T04:37:38,048 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.runner.javaOpts: -server -Xms1g -Xmx1g -XX:MaxDirectMemorySize=1g -Duser.timezone=UTC -Dfile.encoding=UTF-8 -XX:+ExitOnOutOfMemoryError -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager
+2020-05-13T04:37:38,048 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.runner.javaOptsArray: ["-server", "-Xmx1g", "-Xms1g", "-XX:MaxDirectMemorySize=3g", "-Duser.timezone=UTC", "-Dfile.encoding=UTF-8", "-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager"]
+2020-05-13T04:37:38,048 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.task.baseTaskDir: var/druid/task
+2020-05-13T04:37:38,048 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.task.hadoopWorkingPath: var/druid/hadoop-tmp
+2020-05-13T04:37:38,048 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexing.doubleStorage: double
+2020-05-13T04:37:38,049 INFO [main] org.apache.druid.cli.CliPeon - * druid.lookup.enableLookupSyncOnStartup: false
+2020-05-13T04:37:38,049 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.connectURI: jdbc:postgresql://postgres:5432/druid
+2020-05-13T04:37:38,049 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.host: localhost
+2020-05-13T04:37:38,049 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.password: <masked>
+2020-05-13T04:37:38,050 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.port: 1527
+2020-05-13T04:37:38,050 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.user: druid
+2020-05-13T04:37:38,050 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.host: 
+2020-05-13T04:37:38,050 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.type: postgresql
+2020-05-13T04:37:38,050 INFO [main] org.apache.druid.cli.CliPeon - * druid.metrics.emitter.dimension.dataSource: transactions2
+2020-05-13T04:37:38,050 INFO [main] org.apache.druid.cli.CliPeon - * druid.metrics.emitter.dimension.taskId: index_kafka_transactions2_b17fca9545a7989_dhhnclpj
+2020-05-13T04:37:38,050 INFO [main] org.apache.druid.cli.CliPeon - * druid.metrics.emitter.dimension.taskType: index_kafka
+2020-05-13T04:37:38,051 INFO [main] org.apache.druid.cli.CliPeon - * druid.monitoring.monitors: ["org.apache.druid.java.util.metrics.JvmMonitor"]
+2020-05-13T04:37:38,051 INFO [main] org.apache.druid.cli.CliPeon - * druid.plaintextPort: 8100
+2020-05-13T04:37:38,051 INFO [main] org.apache.druid.cli.CliPeon - * druid.processing.buffer.sizeBytes: 268435456
+2020-05-13T04:37:38,051 INFO [main] org.apache.druid.cli.CliPeon - * druid.processing.numMergeBuffers: 2
+2020-05-13T04:37:38,051 INFO [main] org.apache.druid.cli.CliPeon - * druid.processing.numThreads: 2
+2020-05-13T04:37:38,051 INFO [main] org.apache.druid.cli.CliPeon - * druid.selectors.coordinator.serviceName: druid/coordinator
+2020-05-13T04:37:38,051 INFO [main] org.apache.druid.cli.CliPeon - * druid.selectors.indexing.serviceName: druid/overlord
+2020-05-13T04:37:38,052 INFO [main] org.apache.druid.cli.CliPeon - * druid.server.hiddenProperties: ["druid.s3.accessKey","druid.s3.secretKey","druid.metadata.storage.connector.password"]
+2020-05-13T04:37:38,052 INFO [main] org.apache.druid.cli.CliPeon - * druid.server.http.numThreads: 60
+2020-05-13T04:37:38,052 INFO [main] org.apache.druid.cli.CliPeon - * druid.service: druid/middleManager
+2020-05-13T04:37:38,052 INFO [main] org.apache.druid.cli.CliPeon - * druid.sql.enable: true
+2020-05-13T04:37:38,052 INFO [main] org.apache.druid.cli.CliPeon - * druid.startup.logging.logProperties: true
+2020-05-13T04:37:38,052 INFO [main] org.apache.druid.cli.CliPeon - * druid.storage.storageDirectory: /opt/data/segments
+2020-05-13T04:37:38,053 INFO [main] org.apache.druid.cli.CliPeon - * druid.storage.type: local
+2020-05-13T04:37:38,053 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.enablePlaintextPort: true
+2020-05-13T04:37:38,053 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.enableTlsPort: false
+2020-05-13T04:37:38,053 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.host: 172.19.0.9
+2020-05-13T04:37:38,053 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.plaintextPort: 8091
+2020-05-13T04:37:38,053 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.service: druid/middleManager
+2020-05-13T04:37:38,053 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.tlsPort: -1
+2020-05-13T04:37:38,054 INFO [main] org.apache.druid.cli.CliPeon - * druid.tlsPort: -1
+2020-05-13T04:37:38,054 INFO [main] org.apache.druid.cli.CliPeon - * druid.worker.capacity: 4
+2020-05-13T04:37:38,054 INFO [main] org.apache.druid.cli.CliPeon - * druid.zk.paths.base: /druid
+2020-05-13T04:37:38,054 INFO [main] org.apache.druid.cli.CliPeon - * druid.zk.service.host: zookeeper
+2020-05-13T04:37:38,054 INFO [main] org.apache.druid.cli.CliPeon - * file.encoding: UTF-8
+2020-05-13T04:37:38,055 INFO [main] org.apache.druid.cli.CliPeon - * file.encoding.pkg: sun.io
+2020-05-13T04:37:38,055 INFO [main] org.apache.druid.cli.CliPeon - * file.separator: /
+2020-05-13T04:37:38,055 INFO [main] org.apache.druid.cli.CliPeon - * java.awt.graphicsenv: sun.awt.X11GraphicsEnvironment
+2020-05-13T04:37:38,055 INFO [main] org.apache.druid.cli.CliPeon - * java.awt.printerjob: sun.print.PSPrinterJob
+2020-05-13T04:37:38,055 INFO [main] org.apache.druid.cli.CliPeon - * java.class.path: /tmp/conf/druid/cluster/_common:/tmp/conf/druid/cluster/data/middleManager:lib/hibernate-validator-5.2.5.Final.jar:lib/google-http-client-jackson2-1.22.0.jar:lib/calcite-core-1.21.0.jar:lib/maven-artifact-3.6.0.jar:lib/druid-hll-0.17.0.jar:lib/aws-java-sdk-ec2-1.11.199.jar:lib/javax.servlet-api-3.1.0.jar:lib/aether-util-0.9.0.M2.jar:lib/jetty-security-9.4.12.v20180830.jar:lib/maven-model-3.1.1.jar:lib/compress-lzf-1.0.4.jar:lib/spymemcached-2.12.3.jar:lib/commons-collections-3.2.2.jar:lib/google-oauth-client-1.22.0.jar:lib/protobuf-java-3.11.0.jar:lib/log4j-core-2.8.2.jar:lib/jackson-jaxrs-json-provider-2.10.1.jar:lib/jsr305-2.0.1.jar:lib/shims-0.8.11.jar:lib/esri-geometry-api-2.2.0.jar:lib/error_prone_annotations-2.3.2.jar:lib/commons-compiler-3.0.11.jar:lib/maven-model-builder-3.1.1.jar:lib/druid-sql-0.17.0.jar:lib/txw2-2.3.1.jar:lib/log4j-jul-2.8.2.jar:lib/jaxb-api-2.3.1.jar:lib/jetty-servlet-9.4.12.v20180830.jar:lib/rhino-1.7.11.jar:lib/javax.inject-1.jar:lib/guava-16.0.1.jar:lib/zookeeper-3.4.14.jar:lib/commons-lang3-3.8.1.jar:lib/aether-connector-file-0.9.0.M2.jar:lib/jetty-proxy-9.4.12.v20180830.jar:lib/druid-aws-common-0.17.0.jar:lib/commons-collections4-4.2.jar:lib/jackson-datatype-joda-2.10.1.jar:lib/druid-services-0.17.0.jar:lib/audience-annotations-0.5.0.jar:lib/metrics-core-4.0.0.jar:lib/json-path-2.3.0.jar:lib/async-http-client-netty-utils-2.5.3.jar:lib/jsr311-api-1.1.1.jar:lib/aether-api-0.9.0.M2.jar:lib/aggdesigner-algorithm-6.0.jar:lib/javax.el-3.0.0.jar:lib/jackson-core-asl-1.9.13.jar:lib/jetty-client-9.4.12.v20180830.jar:lib/maven-settings-builder-3.1.1.jar:lib/druid-gcp-common-0.17.0.jar:lib/commons-pool2-2.2.jar:lib/jetty-servlets-9.4.12.v20180830.jar:lib/javax.activation-1.2.0.jar:lib/lz4-java-1.6.0.jar:lib/jackson-annotations-2.10.1.jar:lib/druid-server-0.17.0.jar:lib/netty-codec-http-4.1.42.Final.jar:lib/commons-text-1.3.jar:lib/curator-x-discovery-4.1.0.jar:lib/aether-connector-okhttp-0.0.9.jar:lib/curator-client-4.1.0.jar:lib/aether-spi-0.9.0.M2.jar:lib/javax.el-api-3.0.0.jar:lib/commons-net-3.6.jar:lib/commons-io-2.6.jar:lib/icu4j-55.1.jar:lib/jetty-io-9.4.12.v20180830.jar:lib/log4j-1.2-api-2.8.2.jar:lib/istack-commons-runtime-3.0.7.jar:lib/jersey-servlet-1.19.3.jar:lib/jcodings-1.0.43.jar:lib/config-magic-0.9.jar:lib/derbynet-10.14.2.0.jar:lib/netty-transport-4.1.42.Final.jar:lib/jaxb-runtime-2.3.1.jar:lib/avatica-core-1.15.0.jar:lib/jackson-databind-2.10.1.jar:lib/jna-4.5.1.jar:lib/google-http-client-1.22.0.jar:lib/ion-java-1.0.2.jar:lib/jackson-jaxrs-base-2.10.1.jar:lib/jakarta.xml.bind-api-2.3.2.jar:lib/netty-buffer-4.1.42.Final.jar:lib/jetty-continuation-9.4.12.v20180830.jar:lib/jersey-core-1.19.3.jar:lib/maven-repository-metadata-3.1.1.jar:lib/aether-impl-0.9.0.M2.jar:lib/FastInfoset-1.2.15.jar:lib/jboss-logging-3.2.1.Final.jar:lib/jakarta.activation-api-1.2.1.jar:lib/javax.activation-api-1.2.0.jar:lib/httpcore-4.4.11.jar:lib/jetty-rewrite-9.4.12.v20180830.jar:lib/druid-processing-0.17.0.jar:lib/json-smart-2.3.jar:lib/jvm-attach-api-1.5.jar:lib/jetty-http-9.4.12.v20180830.jar:lib/jackson-module-jaxb-annotations-2.10.1.jar:lib/aws-java-sdk-s3-1.11.199.jar:lib/asm-commons-7.1.jar:lib/netty-codec-4.1.42.Final.jar:lib/guice-servlet-4.1.0.jar:lib/janino-3.0.11.jar:lib/jackson-dataformat-smile-2.10.1.jar:lib/extendedset-0.17.0.jar:lib/jetty-util-9.4.12.v20180830.jar:lib/druid-core-0.17.0.jar:lib/jersey-guice-1.19.3.jar:lib/datasketches-memory-1.2.0-incubating.jar:lib/netty-handler-4.1.42.Final.jar:lib/checker-qual-2.5.7.jar:lib/jackson-dataformat-cbor-2.10.1.jar:lib/log4j-api-2.8.2.jar:lib/joni-2.1.27.jar:lib/druid-indexing-hadoop-0.17.0.jar:lib/netty-codec-socks-4.1.42.Final.jar:lib/classmate-1.1.0.jar:lib/commons-lang-2.6.jar:lib/curator-framework-4.1.0.jar:lib/asm-7.1.jar:lib/wagon-provider-api-2.4.jar:lib/netty-codec-dns-4.1.42.Final.jar:lib/aws-java-sdk-kms-1.11.199.jar:lib/log4j-slf4j-impl-2.8.2.jar:lib/validation-api-1.1.0.Final.jar:lib/jetty-server-9.4.12.v20180830.jar:lib/aopalliance-1.0.jar:lib/jackson-core-2.10.1.jar:lib/zstd-jni-1.3.3-1.jar:lib/aws-java-sdk-core-1.11.199.jar:lib/jersey-server-1.19.3.jar:lib/httpclient-4.5.10.jar:lib/avatica-metrics-1.15.0.jar:lib/netty-3.10.6.Final.jar:lib/google-api-client-1.22.0.jar:lib/commons-logging-1.1.1.jar:lib/netty-reactive-streams-2.0.0.jar:lib/curator-recipes-4.1.0.jar:lib/jmespath-java-1.11.199.jar:lib/guice-multibindings-4.1.0.jar:lib/commons-beanutils-1.9.4.jar:lib/derbyclient-10.14.2.0.jar:lib/netty-transport-native-epoll-4.1.42.Final-linux-x86_64.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/RoaringBitmap-0.8.11.jar:lib/netty-resolver-dns-4.1.42.Final.jar:lib/maven-settings-3.1.1.jar:lib/disruptor-3.3.6.jar:lib/commons-math3-3.6.1.jar:lib/guice-4.1.0.jar:lib/commons-codec-1.13.jar:lib/calcite-linq4j-1.21.0.jar:lib/jcl-over-slf4j-1.7.12.jar:lib/slf4j-api-1.7.25.jar:lib/jackson-datatype-guava-2.10.1.jar:lib/netty-resolver-4.1.42.Final.jar:lib/netty-common-4.1.42.Final.jar:lib/caffeine-2.8.0.jar:lib/fastutil-8.2.3.jar:lib/jline-0.9.94.jar:lib/jackson-jaxrs-smile-provider-2.10.1.jar:lib/jdbi-2.63.1.jar:lib/joda-time-2.10.5.jar:lib/druid-indexing-service-0.17.0.jar:lib/jackson-module-guice-2.10.1.jar:lib/antlr4-runtime-4.5.1.jar:lib/async-http-client-2.5.3.jar:lib/tesla-aether-0.0.5.jar:lib/commons-compress-1.19.jar:lib/asm-tree-7.1.jar:lib/maven-aether-provider-3.1.1.jar:lib/derby-10.14.2.0.jar:lib/opencsv-4.6.jar:lib/airline-0.7.jar:lib/accessors-smart-1.2.jar:lib/netty-transport-native-unix-common-4.1.42.Final.jar:lib/plexus-utils-3.0.24.jar:lib/stax-ex-1.8.jar:lib/commons-dbcp2-2.0.1.jar:lib/druid-console-0.17.0.jar:lib/sigar-1.6.5.132.jar:lib/avatica-server-1.15.0.jar:lib/reactive-streams-1.0.2.jar:lib/xz-1.8.jar:lib/jackson-jq-0.0.10.jar:lib/plexus-interpolation-1.19.jar:lib/netty-handler-proxy-4.1.42.Final.jar:lib/asm-analysis-7.1.jar:lib/okhttp-1.0.2.jar:lib/datasketches-java-1.1.0-incubating.jar:
+2020-05-13T04:37:38,057 INFO [main] org.apache.druid.cli.CliPeon - * java.class.version: 52.0
+2020-05-13T04:37:38,057 INFO [main] org.apache.druid.cli.CliPeon - * java.endorsed.dirs: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed
+2020-05-13T04:37:38,057 INFO [main] org.apache.druid.cli.CliPeon - * java.ext.dirs: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext
+2020-05-13T04:37:38,058 INFO [main] org.apache.druid.cli.CliPeon - * java.home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+2020-05-13T04:37:38,058 INFO [main] org.apache.druid.cli.CliPeon - * java.io.tmpdir: var/tmp
+2020-05-13T04:37:38,058 INFO [main] org.apache.druid.cli.CliPeon - * java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2020-05-13T04:37:38,058 INFO [main] org.apache.druid.cli.CliPeon - * java.runtime.name: OpenJDK Runtime Environment
+2020-05-13T04:37:38,058 INFO [main] org.apache.druid.cli.CliPeon - * java.runtime.version: 1.8.0_232-8u232-b09-1~deb9u1-b09
+2020-05-13T04:37:38,058 INFO [main] org.apache.druid.cli.CliPeon - * java.specification.name: Java Platform API Specification
+2020-05-13T04:37:38,058 INFO [main] org.apache.druid.cli.CliPeon - * java.specification.vendor: Oracle Corporation
+2020-05-13T04:37:38,059 INFO [main] org.apache.druid.cli.CliPeon - * java.specification.version: 1.8
+2020-05-13T04:37:38,059 INFO [main] org.apache.druid.cli.CliPeon - * java.util.logging.manager: org.apache.logging.log4j.jul.LogManager
+2020-05-13T04:37:38,059 INFO [main] org.apache.druid.cli.CliPeon - * java.vendor: Oracle Corporation
+2020-05-13T04:37:38,059 INFO [main] org.apache.druid.cli.CliPeon - * java.vendor.url: http://java.oracle.com/
+2020-05-13T04:37:38,059 INFO [main] org.apache.druid.cli.CliPeon - * java.vendor.url.bug: http://bugreport.sun.com/bugreport/
+2020-05-13T04:37:38,060 INFO [main] org.apache.druid.cli.CliPeon - * java.version: 1.8.0_232
+2020-05-13T04:37:38,060 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.info: mixed mode
+2020-05-13T04:37:38,060 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.name: OpenJDK 64-Bit Server VM
+2020-05-13T04:37:38,060 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.specification.name: Java Virtual Machine Specification
+2020-05-13T04:37:38,060 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.specification.vendor: Oracle Corporation
+2020-05-13T04:37:38,060 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.specification.version: 1.8
+2020-05-13T04:37:38,061 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.vendor: Oracle Corporation
+2020-05-13T04:37:38,061 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.version: 25.232-b09
+2020-05-13T04:37:38,061 INFO [main] org.apache.druid.cli.CliPeon - * line.separator: 
+
+2020-05-13T04:37:38,061 INFO [main] org.apache.druid.cli.CliPeon - * log4j.shutdownCallbackRegistry: org.apache.druid.common.config.Log4jShutdown
+2020-05-13T04:37:38,061 INFO [main] org.apache.druid.cli.CliPeon - * log4j.shutdownHookEnabled: true
+2020-05-13T04:37:38,061 INFO [main] org.apache.druid.cli.CliPeon - * os.arch: amd64
+2020-05-13T04:37:38,062 INFO [main] org.apache.druid.cli.CliPeon - * os.name: Linux
+2020-05-13T04:37:38,062 INFO [main] org.apache.druid.cli.CliPeon - * os.version: 4.19.76-linuxkit
+2020-05-13T04:37:38,062 INFO [main] org.apache.druid.cli.CliPeon - * path.separator: :
+2020-05-13T04:37:38,062 INFO [main] org.apache.druid.cli.CliPeon - * sun.arch.data.model: 64
+2020-05-13T04:37:38,062 INFO [main] org.apache.druid.cli.CliPeon - * sun.boot.class.path: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes
+2020-05-13T04:37:38,062 INFO [main] org.apache.druid.cli.CliPeon - * sun.boot.library.path: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64
+2020-05-13T04:37:38,063 INFO [main] org.apache.druid.cli.CliPeon - * sun.cpu.endian: little
+2020-05-13T04:37:38,063 INFO [main] org.apache.druid.cli.CliPeon - * sun.cpu.isalist: 
+2020-05-13T04:37:38,063 INFO [main] org.apache.druid.cli.CliPeon - * sun.io.unicode.encoding: UnicodeLittle
+2020-05-13T04:37:38,063 INFO [main] org.apache.druid.cli.CliPeon - * sun.java.command: org.apache.druid.cli.Main internal peon var/druid/task/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/task.json var/druid/task/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/6d06a04a-acc2-42d2-8fd2-1a551f0e4a92/status.json var/druid/task/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/6d06a04a-acc2-42d2-8fd2-1a551f0e4a92/report.json
+2020-05-13T04:37:38,064 INFO [main] org.apache.druid.cli.CliPeon - * sun.java.launcher: SUN_STANDARD
+2020-05-13T04:37:38,064 INFO [main] org.apache.druid.cli.CliPeon - * sun.jnu.encoding: ANSI_X3.4-1968
+2020-05-13T04:37:38,064 INFO [main] org.apache.druid.cli.CliPeon - * sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+2020-05-13T04:37:38,064 INFO [main] org.apache.druid.cli.CliPeon - * sun.os.patch.level: unknown
+2020-05-13T04:37:38,065 INFO [main] org.apache.druid.cli.CliPeon - * user.country: US
+2020-05-13T04:37:38,065 INFO [main] org.apache.druid.cli.CliPeon - * user.dir: /opt/apache-druid-0.17.0
+2020-05-13T04:37:38,065 INFO [main] org.apache.druid.cli.CliPeon - * user.home: /opt/druid
+2020-05-13T04:37:38,065 INFO [main] org.apache.druid.cli.CliPeon - * user.language: en
+2020-05-13T04:37:38,065 INFO [main] org.apache.druid.cli.CliPeon - * user.name: druid
+2020-05-13T04:37:38,065 INFO [main] org.apache.druid.cli.CliPeon - * user.timezone: UTC
+2020-05-13T04:37:38,150 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [druid.computation.buffer.poolCacheMaxCount, ${base_path}.buffer.poolCacheMaxCount] on [org.apache.druid.query.DruidProcessingConfig#poolCacheMaxCount()]
+2020-05-13T04:37:38,158 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.pool.awaitShutdownMillis] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolAwaitShutdownMillis()]
+2020-05-13T04:37:38,159 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [268435456] for [druid.processing.buffer.sizeBytes] on [org.apache.druid.query.DruidProcessingConfig#intermediateComputeSizeBytesConfigured()]
+2020-05-13T04:37:38,161 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [2] for [druid.processing.numThreads] on [org.apache.druid.query.DruidProcessingConfig#getNumThreadsConfigured()]
+2020-05-13T04:37:38,161 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [2] for [druid.processing.numMergeBuffers] on [org.apache.druid.query.DruidProcessingConfig#getNumMergeBuffersConfigured()]
+2020-05-13T04:37:38,161 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.columnCache.sizeBytes] on [org.apache.druid.query.DruidProcessingConfig#columnCacheSizeBytes()]
+2020-05-13T04:37:38,161 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.fifo] on [org.apache.druid.query.DruidProcessingConfig#isFifo()]
+2020-05-13T04:37:38,162 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.tmpDir] on [org.apache.druid.query.DruidProcessingConfig#getTmpDir()]
+2020-05-13T04:37:38,162 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.useParallelMergePool] on [org.apache.druid.query.DruidProcessingConfig#useParallelMergePoolConfigured()]
+2020-05-13T04:37:38,163 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.pool.parallelism] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolParallelismConfigured()]
+2020-05-13T04:37:38,163 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.pool.defaultMaxQueryParallelism] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolDefaultMaxQueryParallelism()]
+2020-05-13T04:37:38,164 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.task.targetRunTimeMillis] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolTargetTaskRunTimeMillis()]
+2020-05-13T04:37:38,164 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.task.initialYieldNumRows] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolTaskInitialYieldRows()]
+2020-05-13T04:37:38,165 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.task.smallBatchNumRows] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolSmallBatchRows()]
+2020-05-13T04:37:38,166 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning default value [processing-%s] for [${base_path}.formatString] on [org.apache.druid.java.util.common.concurrent.ExecutorServiceConfig#getFormatString()]
+2020-05-13T04:37:38,602 INFO [main] org.eclipse.jetty.util.log - Logging initialized @9986ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-13T04:37:38,658 INFO [main] org.apache.druid.server.initialization.jetty.JettyServerModule - Creating http connector with port [8100]
+2020-05-13T04:37:39,146 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new intermediate processing buffer[0] of size[268,435,456]
+2020-05-13T04:37:40,433 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new intermediate processing buffer[1] of size[268,435,456]
+2020-05-13T04:37:41,630 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new result merging buffer[0] of size[268,435,456]
+2020-05-13T04:37:42,674 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new result merging buffer[1] of size[268,435,456]
+2020-05-13T04:37:43,430 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [INIT]
+2020-05-13T04:37:43,431 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [NORMAL]
+2020-05-13T04:37:43,436 INFO [main] org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+2020-05-13T04:37:43,516 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+2020-05-13T04:37:43,516 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:host.name=f30f38dbf601
+2020-05-13T04:37:43,516 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_232
+2020-05-13T04:37:43,516 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2020-05-13T04:37:43,516 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2020-05-13T04:37:43,516 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/tmp/conf/druid/cluster/_common:/tmp/conf/druid/cluster/data/middleManager:lib/hibernate-validator-5.2.5.Final.jar:lib/google-http-client-jackson2-1.22.0.jar:lib/calcite-core-1.21.0.jar:lib/maven-artifact-3.6.0.jar:lib/druid-hll-0.17.0.jar:lib/aws-java-sdk-ec2-1.11.199.jar:lib/javax.servlet-api-3.1.0.jar:lib/aether-util-0.9.0.M2.jar:lib/jetty-security-9.4.12.v20180830.jar:lib/maven-model-3.1.1.jar:lib/compress-lzf-1.0.4.jar:lib/spymemcached-2.12.3.jar:lib/commons-collections-3.2.2.jar:lib/google-oauth-client-1.22.0.jar:lib/protobuf-java-3.11.0.jar:lib/log4j-core-2.8.2.jar:lib/jackson-jaxrs-json-provider-2.10.1.jar:lib/jsr305-2.0.1.jar:lib/shims-0.8.11.jar:lib/esri-geometry-api-2.2.0.jar:lib/error_prone_annotations-2.3.2.jar:lib/commons-compiler-3.0.11.jar:lib/maven-model-builder-3.1.1.jar:lib/druid-sql-0.17.0.jar:lib/txw2-2.3.1.jar:lib/log4j-jul-2.8.2.jar:lib/jaxb-api-2.3.1.jar:lib/jetty-servlet-9.4.12.v20180830.jar:lib/rhino-1.7.11.jar:lib/javax.inject-1.jar:lib/guava-16.0.1.jar:lib/zookeeper-3.4.14.jar:lib/commons-lang3-3.8.1.jar:lib/aether-connector-file-0.9.0.M2.jar:lib/jetty-proxy-9.4.12.v20180830.jar:lib/druid-aws-common-0.17.0.jar:lib/commons-collections4-4.2.jar:lib/jackson-datatype-joda-2.10.1.jar:lib/druid-services-0.17.0.jar:lib/audience-annotations-0.5.0.jar:lib/metrics-core-4.0.0.jar:lib/json-path-2.3.0.jar:lib/async-http-client-netty-utils-2.5.3.jar:lib/jsr311-api-1.1.1.jar:lib/aether-api-0.9.0.M2.jar:lib/aggdesigner-algorithm-6.0.jar:lib/javax.el-3.0.0.jar:lib/jackson-core-asl-1.9.13.jar:lib/jetty-client-9.4.12.v20180830.jar:lib/maven-settings-builder-3.1.1.jar:lib/druid-gcp-common-0.17.0.jar:lib/commons-pool2-2.2.jar:lib/jetty-servlets-9.4.12.v20180830.jar:lib/javax.activation-1.2.0.jar:lib/lz4-java-1.6.0.jar:lib/jackson-annotations-2.10.1.jar:lib/druid-server-0.17.0.jar:lib/netty-codec-http-4.1.42.Final.jar:lib/commons-text-1.3.jar:lib/curator-x-discovery-4.1.0.jar:lib/aether-connector-okhttp-0.0.9.jar:lib/curator-client-4.1.0.jar:lib/aether-spi-0.9.0.M2.jar:lib/javax.el-api-3.0.0.jar:lib/commons-net-3.6.jar:lib/commons-io-2.6.jar:lib/icu4j-55.1.jar:lib/jetty-io-9.4.12.v20180830.jar:lib/log4j-1.2-api-2.8.2.jar:lib/istack-commons-runtime-3.0.7.jar:lib/jersey-servlet-1.19.3.jar:lib/jcodings-1.0.43.jar:lib/config-magic-0.9.jar:lib/derbynet-10.14.2.0.jar:lib/netty-transport-4.1.42.Final.jar:lib/jaxb-runtime-2.3.1.jar:lib/avatica-core-1.15.0.jar:lib/jackson-databind-2.10.1.jar:lib/jna-4.5.1.jar:lib/google-http-client-1.22.0.jar:lib/ion-java-1.0.2.jar:lib/jackson-jaxrs-base-2.10.1.jar:lib/jakarta.xml.bind-api-2.3.2.jar:lib/netty-buffer-4.1.42.Final.jar:lib/jetty-continuation-9.4.12.v20180830.jar:lib/jersey-core-1.19.3.jar:lib/maven-repository-metadata-3.1.1.jar:lib/aether-impl-0.9.0.M2.jar:lib/FastInfoset-1.2.15.jar:lib/jboss-logging-3.2.1.Final.jar:lib/jakarta.activation-api-1.2.1.jar:lib/javax.activation-api-1.2.0.jar:lib/httpcore-4.4.11.jar:lib/jetty-rewrite-9.4.12.v20180830.jar:lib/druid-processing-0.17.0.jar:lib/json-smart-2.3.jar:lib/jvm-attach-api-1.5.jar:lib/jetty-http-9.4.12.v20180830.jar:lib/jackson-module-jaxb-annotations-2.10.1.jar:lib/aws-java-sdk-s3-1.11.199.jar:lib/asm-commons-7.1.jar:lib/netty-codec-4.1.42.Final.jar:lib/guice-servlet-4.1.0.jar:lib/janino-3.0.11.jar:lib/jackson-dataformat-smile-2.10.1.jar:lib/extendedset-0.17.0.jar:lib/jetty-util-9.4.12.v20180830.jar:lib/druid-core-0.17.0.jar:lib/jersey-guice-1.19.3.jar:lib/datasketches-memory-1.2.0-incubating.jar:lib/netty-handler-4.1.42.Final.jar:lib/checker-qual-2.5.7.jar:lib/jackson-dataformat-cbor-2.10.1.jar:lib/log4j-api-2.8.2.jar:lib/joni-2.1.27.jar:lib/druid-indexing-hadoop-0.17.0.jar:lib/netty-codec-socks-4.1.42.Final.jar:lib/classmate-1.1.0.jar:lib/commons-lang-2.6.jar:lib/curator-framework-4.1.0.jar:lib/asm-7.1.jar:lib/wagon-provider-api-2.4.jar:lib/netty-codec-dns-4.1.42.Final.jar:lib/aws-java-sdk-kms-1.11.199.jar:lib/log4j-slf4j-impl-2.8.2.jar:lib/validation-api-1.1.0.Final.jar:lib/jetty-server-9.4.12.v20180830.jar:lib/aopalliance-1.0.jar:lib/jackson-core-2.10.1.jar:lib/zstd-jni-1.3.3-1.jar:lib/aws-java-sdk-core-1.11.199.jar:lib/jersey-server-1.19.3.jar:lib/httpclient-4.5.10.jar:lib/avatica-metrics-1.15.0.jar:lib/netty-3.10.6.Final.jar:lib/google-api-client-1.22.0.jar:lib/commons-logging-1.1.1.jar:lib/netty-reactive-streams-2.0.0.jar:lib/curator-recipes-4.1.0.jar:lib/jmespath-java-1.11.199.jar:lib/guice-multibindings-4.1.0.jar:lib/commons-beanutils-1.9.4.jar:lib/derbyclient-10.14.2.0.jar:lib/netty-transport-native-epoll-4.1.42.Final-linux-x86_64.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/RoaringBitmap-0.8.11.jar:lib/netty-resolver-dns-4.1.42.Final.jar:lib/maven-settings-3.1.1.jar:lib/disruptor-3.3.6.jar:lib/commons-math3-3.6.1.jar:lib/guice-4.1.0.jar:lib/commons-codec-1.13.jar:lib/calcite-linq4j-1.21.0.jar:lib/jcl-over-slf4j-1.7.12.jar:lib/slf4j-api-1.7.25.jar:lib/jackson-datatype-guava-2.10.1.jar:lib/netty-resolver-4.1.42.Final.jar:lib/netty-common-4.1.42.Final.jar:lib/caffeine-2.8.0.jar:lib/fastutil-8.2.3.jar:lib/jline-0.9.94.jar:lib/jackson-jaxrs-smile-provider-2.10.1.jar:lib/jdbi-2.63.1.jar:lib/joda-time-2.10.5.jar:lib/druid-indexing-service-0.17.0.jar:lib/jackson-module-guice-2.10.1.jar:lib/antlr4-runtime-4.5.1.jar:lib/async-http-client-2.5.3.jar:lib/tesla-aether-0.0.5.jar:lib/commons-compress-1.19.jar:lib/asm-tree-7.1.jar:lib/maven-aether-provider-3.1.1.jar:lib/derby-10.14.2.0.jar:lib/opencsv-4.6.jar:lib/airline-0.7.jar:lib/accessors-smart-1.2.jar:lib/netty-transport-native-unix-common-4.1.42.Final.jar:lib/plexus-utils-3.0.24.jar:lib/stax-ex-1.8.jar:lib/commons-dbcp2-2.0.1.jar:lib/druid-console-0.17.0.jar:lib/sigar-1.6.5.132.jar:lib/avatica-server-1.15.0.jar:lib/reactive-streams-1.0.2.jar:lib/xz-1.8.jar:lib/jackson-jq-0.0.10.jar:lib/plexus-interpolation-1.19.jar:lib/netty-handler-proxy-4.1.42.Final.jar:lib/asm-analysis-7.1.jar:lib/okhttp-1.0.2.jar:lib/datasketches-java-1.1.0-incubating.jar:
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=var/tmp
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.name=Linux
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.version=4.19.76-linuxkit
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.name=druid
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.home=/opt/druid
+2020-05-13T04:37:43,517 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/opt/apache-druid-0.17.0
+2020-05-13T04:37:43,522 INFO [main] org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=zookeeper sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@29c53c4f
+2020-05-13T04:37:43,646 INFO [main] org.apache.curator.framework.imps.CuratorFrameworkImpl - Default schema
+2020-05-13T04:37:43,750 INFO [main-SendThread(zookeeper:2181)] org.apache.zookeeper.ClientCnxn - Opening socket connection to server zookeeper/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-05-13T04:37:43,791 INFO [main-SendThread(zookeeper:2181)] org.apache.zookeeper.ClientCnxn - Socket connection established to zookeeper/172.19.0.2:2181, initiating session
+2020-05-13T04:37:45,052 INFO [main-SendThread(zookeeper:2181)] org.apache.zookeeper.ClientCnxn - Session establishment complete on server zookeeper/172.19.0.2:2181, sessionid = 0x10000a265a40007, negotiated timeout = 30000
+2020-05-13T04:37:45,079 INFO [main-EventThread] org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+2020-05-13T04:37:45,558 INFO [NodeRoleWatcher[OVERLORD]] org.apache.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeRoleWatcher - Node[http://172.19.0.5:8081] of role[overlord] detected.
+2020-05-13T04:37:45,559 INFO [NodeRoleWatcher[OVERLORD]] org.apache.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeRoleWatcher - Node watcher of role[overlord] is now initialized.
+2020-05-13T04:37:45,561 INFO [NodeRoleWatcher[COORDINATOR]] org.apache.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeRoleWatcher - Node[http://172.19.0.5:8081] of role[coordinator] detected.
+2020-05-13T04:37:45,562 INFO [NodeRoleWatcher[COORDINATOR]] org.apache.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeRoleWatcher - Node watcher of role[coordinator] is now initialized.
+2020-05-13T04:37:45,765 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Running with task: {
+  "type" : "index_kafka",
+  "id" : "index_kafka_transactions2_b17fca9545a7989_dhhnclpj",
+  "resource" : {
+    "availabilityGroup" : "index_kafka_transactions2_b17fca9545a7989",
+    "requiredCapacity" : 1
+  },
+  "dataSchema" : {
+    "dataSource" : "transactions2",
+    "timestampSpec" : {
+      "column" : "createdDateTime",
+      "format" : "iso",
+      "missingValue" : null
+    },
+    "dimensionsSpec" : {
+      "dimensions" : [ {
+        "type" : "string",
+        "name" : "currencyCode",
+        "multiValueHandling" : "SORTED_ARRAY",
+        "createBitmapIndex" : true
+      }, {
+        "type" : "string",
+        "name" : "status",
+        "multiValueHandling" : "SORTED_ARRAY",
+        "createBitmapIndex" : true
+      }, {
+        "type" : "string",
+        "name" : "cardBin",
+        "multiValueHandling" : "SORTED_ARRAY",
+        "createBitmapIndex" : true
+      } ],
+      "dimensionExclusions" : [ "amount", "sum_amount", "count", "createdDateTime" ]
+    },
+    "metricsSpec" : [ {
+      "type" : "count",
+      "name" : "count"
+    }, {
+      "type" : "longSum",
+      "name" : "sum_amount",
+      "fieldName" : "amount",
+      "expression" : null
+    } ],
+    "granularitySpec" : {
+      "type" : "uniform",
+      "segmentGranularity" : "HOUR",
+      "queryGranularity" : "HOUR",
+      "rollup" : true,
+      "intervals" : null
+    },
+    "transformSpec" : {
+      "filter" : null,
+      "transforms" : [ ]
+    }
+  },
+  "tuningConfig" : {
+    "type" : "KafkaTuningConfig",
+    "maxRowsInMemory" : 1000000,
+    "maxBytesInMemory" : 0,
+    "maxRowsPerSegment" : 5000000,
+    "maxTotalRows" : null,
+    "intermediatePersistPeriod" : "PT10M",
+    "basePersistDirectory" : "/opt/apache-druid-0.17.0/var/tmp/druid-realtime-persist3872540695605374941",
+    "maxPendingPersists" : 0,
+    "indexSpec" : {
+      "bitmap" : {
+        "type" : "concise"
+      },
+      "dimensionCompression" : "lz4",
+      "metricCompression" : "lz4",
+      "longEncoding" : "longs"
+    },
+    "indexSpecForIntermediatePersists" : {
+      "bitmap" : {
+        "type" : "concise"
+      },
+      "dimensionCompression" : "lz4",
+      "metricCompression" : "lz4",
+      "longEncoding" : "longs"
+    },
+    "buildV9Directly" : true,
+    "reportParseExceptions" : false,
+    "handoffConditionTimeout" : 0,
+    "resetOffsetAutomatically" : false,
+    "segmentWriteOutMediumFactory" : null,
+    "intermediateHandoffPeriod" : "P2147483647D",
+    "logParseExceptions" : false,
+    "maxParseExceptions" : 2147483647,
+    "maxSavedParseExceptions" : 0,
+    "skipSequenceNumberAvailabilityCheck" : false
+  },
+  "ioConfig" : {
+    "type" : "kafka",
+    "taskGroupId" : 0,
+    "baseSequenceName" : "index_kafka_transactions2_b17fca9545a7989",
+    "startPartitions" : {
+      "type" : "end",
+      "stream" : "transactions2",
+      "topic" : "transactions2",
+      "partitionSequenceNumberMap" : {
+        "0" : 0
+      },
+      "partitionOffsetMap" : {
+        "0" : 0
+      }
+    },
+    "endPartitions" : {
+      "type" : "end",
+      "stream" : "transactions2",
+      "topic" : "transactions2",
+      "partitionSequenceNumberMap" : {
+        "0" : 9223372036854775807
+      },
+      "partitionOffsetMap" : {
+        "0" : 9223372036854775807
+      }
+    },
+    "startSequenceNumbers" : {
+      "type" : "start",
+      "stream" : "transactions2",
+      "topic" : "transactions2",
+      "partitionSequenceNumberMap" : {
+        "0" : 0
+      },
+      "partitionOffsetMap" : {
+        "0" : 0
+      },
+      "exclusivePartitions" : [ ]
+    },
+    "endSequenceNumbers" : {
+      "type" : "end",
+      "stream" : "transactions2",
+      "topic" : "transactions2",
+      "partitionSequenceNumberMap" : {
+        "0" : 9223372036854775807
+      },
+      "partitionOffsetMap" : {
+        "0" : 9223372036854775807
+      }
+    },
+    "consumerProperties" : {
+      "bootstrap.servers" : "kafka:39092"
+    },
+    "pollTimeout" : 100,
+    "useTransaction" : true,
+    "minimumMessageTime" : null,
+    "maximumMessageTime" : null,
+    "inputFormat" : {
+      "type" : "json",
+      "flattenSpec" : {
+        "useFieldDiscovery" : true,
+        "fields" : [ ]
+      },
+      "featureSpec" : { }
+    }
+  },
+  "context" : {
+    "forceTimeChunkLock" : true,
+    "checkpoints" : "{\"0\":{\"0\":0}}",
+    "IS_INCREMENTAL_HANDOFF_SUPPORTED" : true
+  },
+  "groupId" : "index_kafka_transactions2",
+  "dataSource" : "transactions2"
+}
+2020-05-13T04:37:45,828 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Attempting to lock file[var/druid/task/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/lock].
+2020-05-13T04:37:45,842 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Acquired lock file[var/druid/task/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/lock] in 13ms.
+2020-05-13T04:37:45,885 INFO [task-runner-0-priority-0] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Running task: index_kafka_transactions2_b17fca9545a7989_dhhnclpj
+2020-05-13T04:37:45,932 INFO [main] org.apache.druid.server.listener.announcer.ListenerResourceAnnouncer - Announcing start time on [/druid/listeners/lookups/__default/http:172.19.0.9:8100]
+2020-05-13T04:37:45,933 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [SERVER]
+2020-05-13T04:37:45,962 INFO [main] org.eclipse.jetty.server.Server - jetty-9.4.12.v20180830; built: 2018-08-30T13:59:14.071Z; git: 27208684755d94a92186989f695db2d7b21ebc51; jvm 1.8.0_232-8u232-b09-1~deb9u1-b09
+2020-05-13T04:37:46,250 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Starting with sequences: [SequenceMetadata{sequenceId=0, sequenceName='index_kafka_transactions2_b17fca9545a7989_0', assignments=[0], startOffsets={0=0}, exclusiveStartPartitions=[], endOffsets={0=9223372036854775807}, sentinel=false, checkpointed=false}]
+2020-05-13T04:37:46,378 INFO [main] org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2020-05-13T04:37:46,378 INFO [main] org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2020-05-13T04:37:46,388 INFO [main] org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2020-05-13T04:37:46,518 INFO [task-runner-0-priority-0] org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [kafka:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-supervisor-eblmcfpi
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_committed
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 10000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2020-05-13T04:37:46,717 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.http.SegmentListerResource as a root resource class
+2020-05-13T04:37:46,724 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider as a provider class
+2020-05-13T04:37:46,725 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering com.fasterxml.jackson.jaxrs.smile.JacksonSmileProvider as a provider class
+2020-05-13T04:37:46,725 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.initialization.jetty.CustomExceptionMapper as a provider class
+2020-05-13T04:37:46,725 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.initialization.jetty.ForbiddenExceptionMapper as a provider class
+2020-05-13T04:37:46,725 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.initialization.jetty.BadRequestExceptionMapper as a provider class
+2020-05-13T04:37:46,725 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.StatusResource as a root resource class
+2020-05-13T04:37:46,733 INFO [main] com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.3 10/24/2016 03:43 PM'
+2020-05-13T04:37:46,900 INFO [task-runner-0-priority-0] org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.2.1
+2020-05-13T04:37:46,901 INFO [task-runner-0-priority-0] org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 55783d3133a5a49a
+2020-05-13T04:37:46,906 INFO [task-runner-0-priority-0] org.apache.druid.server.coordination.CuratorDataSegmentServerAnnouncer - Announcing self[DruidServerMetadata{name='172.19.0.9:8100', hostAndPort='172.19.0.9:8100', hostAndTlsPort='null', maxSize=0, tier='_default_tier', type=indexer-executor, priority=0}] at [/druid/announcements/172.19.0.9:8100]
+2020-05-13T04:37:46,975 INFO [task-runner-0-priority-0] org.apache.druid.curator.discovery.CuratorDruidNodeAnnouncer - Announced self [{"druidNode":{"service":"druid/middleManager","host":"172.19.0.9","bindOnHost":false,"plaintextPort":8100,"port":-1,"tlsPort":-1,"enablePlaintextPort":true,"enableTlsPort":false},"nodeType":"peon","services":{"dataNodeService":{"type":"dataNodeService","tier":"_default_tier","maxSize":0,"type":"indexer-executor","priority":0},"lookupNodeService":{"type":"lookupNodeService","lookupTier":"__default"}}}].
+2020-05-13T04:37:47,002 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.initialization.jetty.CustomExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2020-05-13T04:37:47,010 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.initialization.jetty.ForbiddenExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2020-05-13T04:37:47,011 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.initialization.jetty.BadRequestExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2020-05-13T04:37:47,014 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider to GuiceManagedComponentProvider with the scope "Singleton"
+2020-05-13T04:37:47,037 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding com.fasterxml.jackson.jaxrs.smile.JacksonSmileProvider to GuiceManagedComponentProvider with the scope "Singleton"
+2020-05-13T04:37:47,197 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Initialized sequences: SequenceMetadata{sequenceId=0, sequenceName='index_kafka_transactions2_b17fca9545a7989_0', assignments=[0], startOffsets={0=0}, exclusiveStartPartitions=[], endOffsets={0=9223372036854775807}, sentinel=false, checkpointed=false}
+2020-05-13T04:37:47,206 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Adding partition[0], start[0] -> end[9223372036854775807] to assignment.
+2020-05-13T04:37:47,225 INFO [task-runner-0-priority-0] org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=kafka-supervisor-eblmcfpi] Subscribed to partition(s): transactions2-0
+2020-05-13T04:37:47,246 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Seeking partition[0] to[0].
+2020-05-13T04:37:48,156 INFO [task-runner-0-priority-0] org.apache.kafka.clients.Metadata - Cluster ID: -m9yhpj8ThecYGG1uIlEuQ
+2020-05-13T04:37:48,366 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.http.security.StateResourceFilter to GuiceInstantiatedComponentProvider
+2020-05-13T04:37:48,512 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.http.SegmentListerResource to GuiceManagedComponentProvider with the scope "PerRequest"
+2020-05-13T04:37:48,557 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.QueryResource to GuiceInstantiatedComponentProvider
+2020-05-13T04:37:48,584 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.segment.realtime.firehose.ChatHandlerResource to GuiceInstantiatedComponentProvider
+2020-05-13T04:37:48,592 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.http.security.ConfigResourceFilter to GuiceInstantiatedComponentProvider
+2020-05-13T04:37:48,606 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.query.lookup.LookupListeningResource to GuiceInstantiatedComponentProvider
+2020-05-13T04:37:48,611 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.query.lookup.LookupIntrospectionResource to GuiceInstantiatedComponentProvider
+2020-05-13T04:37:48,615 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.StatusResource to GuiceManagedComponentProvider with the scope "Undefined"
+2020-05-13T04:37:48,899 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@d85b399{/,null,AVAILABLE}
+2020-05-13T04:37:48,964 INFO [main] org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@28f05b0c{HTTP/1.1,[http/1.1]}{0.0.0.0:8100}
+2020-05-13T04:37:48,964 INFO [main] org.eclipse.jetty.server.Server - Started @20385ms
+2020-05-13T04:37:48,968 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [ANNOUNCEMENTS]
+2020-05-13T04:37:49,146 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Successfully started lifecycle [module]
+2020-05-13T04:37:51,662 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - New segment[transactions2_2020-05-13T03:00:00.000Z_2020-05-13T04:00:00.000Z_2020-05-13T03:52:35.353Z] for sequenceName[index_kafka_transactions2_b17fca9545a7989_0].
+2020-05-13T04:37:51,889 INFO [task-runner-0-priority-0] org.apache.druid.server.coordination.BatchDataSegmentAnnouncer - Announcing segment[transactions2_2020-05-13T03:00:00.000Z_2020-05-13T04:00:00.000Z_2020-05-13T03:52:35.353Z] at new path[/druid/segments/172.19.0.9:8100/172.19.0.9:8100_indexer-executor__default_tier_2020-05-13T04:37:51.882Z_d2d182e1f9c446d282266a2bd95e342c0]
+2020-05-13T04:37:56,582 DEBUG [qtp2133612542-120] org.apache.druid.jetty.RequestLog - 172.19.0.7 POST //172.19.0.9:8100/druid/v2/ HTTP/1.1
+2020-05-13T04:37:57,553 DEBUG [qtp2133612542-66] org.apache.druid.jetty.RequestLog - 172.19.0.5 GET //172.19.0.9:8100/druid/worker/v1/chat/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/time/start HTTP/1.1
+2020-05-13T04:37:57,679 DEBUG [qtp2133612542-91] org.apache.druid.jetty.RequestLog - 172.19.0.5 GET //172.19.0.9:8100/druid/worker/v1/chat/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/offsets/current HTTP/1.1
+2020-05-13T04:38:07,565 DEBUG [qtp2133612542-93] org.apache.druid.jetty.RequestLog - 172.19.0.5 GET //172.19.0.9:8100/druid/worker/v1/chat/index_kafka_transactions2_b17fca9545a7989_dhhnclpj/offsets/current HTTP/1.1
+2020-05-13T04:38:29,515 INFO [task-runner-0-priority-0] org.apache.kafka.clients.FetchSessionHandler - [Consumer clientId=consumer-1, groupId=kafka-supervisor-eblmcfpi] Error sending fetch request (sessionId=235588842, epoch=74) to node 1: org.apache.kafka.common.errors.DisconnectException.
+2020-05-13T04:38:29,571 WARN [task-runner-0-priority-0] org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=kafka-supervisor-eblmcfpi] Connection to node 1 (kafka/172.19.0.4:39092) could not be established. Broker may not be available.
+2020-05-13T04:38:29,724 WARN [task-runner-0-priority-0] org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=kafka-supervisor-eblmcfpi] Connection to node 1 (kafka/172.19.0.4:39092) could not be established. Broker may not be available.
+2020-05-13T04:38:29,842 INFO [parent-monitor-0] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Triggering JVM shutdown.
+2020-05-13T04:38:29,844 INFO [Thread-70] org.apache.druid.cli.CliPeon - Running shutdown hook
+2020-05-13T04:38:29,846 INFO [Thread-70] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [ANNOUNCEMENTS]
+2020-05-13T04:38:29,851 INFO [Thread-70] org.apache.druid.curator.announcement.Announcer - Unannouncing [/druid/announcements/172.19.0.9:8100]
+2020-05-13T04:38:29,882 INFO [Thread-70] org.apache.druid.curator.announcement.Announcer - Unannouncing [/druid/listeners/lookups/__default/http:172.19.0.9:8100]
+2020-05-13T04:38:29,886 INFO [Thread-70] org.apache.druid.curator.announcement.Announcer - Unannouncing [/druid/segments/172.19.0.9:8100/172.19.0.9:8100_indexer-executor__default_tier_2020-05-13T04:37:51.882Z_d2d182e1f9c446d282266a2bd95e342c0]
+2020-05-13T04:38:29,895 INFO [Thread-70] org.apache.druid.curator.announcement.Announcer - Unannouncing [/druid/internal-discovery/PEON/172.19.0.9:8100]
+2020-05-13T04:38:29,900 INFO [Thread-70] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [SERVER]
+2020-05-13T04:38:29,920 INFO [Thread-70] org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@28f05b0c{HTTP/1.1,[http/1.1]}{0.0.0.0:8100}
+2020-05-13T04:38:29,923 INFO [Thread-70] org.eclipse.jetty.server.session - node0 Stopped scavenging
+2020-05-13T04:38:29,926 WARN [task-runner-0-priority-0] org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=kafka-supervisor-eblmcfpi] Connection to node 1 (kafka/172.19.0.4:39092) could not be established. Broker may not be available.
+2020-05-13T04:38:29,927 INFO [Thread-70] org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@d85b399{/,null,UNAVAILABLE}
+2020-05-13T04:38:29,948 INFO [Thread-70] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [NORMAL]
+2020-05-13T04:38:29,949 INFO [Thread-70] org.apache.druid.server.listener.announcer.ListenerResourceAnnouncer - Unannouncing start time on [/druid/listeners/lookups/__default/http:172.19.0.9:8100]
+2020-05-13T04:38:29,951 INFO [Thread-70] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Starting graceful shutdown of task[index_kafka_transactions2_b17fca9545a7989_dhhnclpj].
+2020-05-13T04:38:29,951 INFO [Thread-70] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Stopping forcefully (status: [READING])
+2020-05-13T04:38:29,962 INFO [LookupExtractorFactoryContainerProvider-MainThread] org.apache.druid.query.lookup.LookupReferencesManager - Lookup Management loop exited. Lookup notices are not handled anymore.
+2020-05-13T04:38:29,954 ERROR [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Encountered exception in run() before persisting.
+org.apache.kafka.common.errors.InterruptException: java.lang.InterruptedException
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.maybeThrowInterruptException(ConsumerNetworkClient.java:493) ~[?:?]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:281) ~[?:?]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:236) ~[?:?]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:227) ~[?:?]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:161) ~[?:?]
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:355) ~[?:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.updateAssignmentMetadataIfNeeded(KafkaConsumer.java:1226) ~[?:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1191) ~[?:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1176) ~[?:?]
+	at org.apache.druid.indexing.kafka.KafkaRecordSupplier.poll(KafkaRecordSupplier.java:124) ~[?:?]
+	at org.apache.druid.indexing.kafka.IncrementalPublishingKafkaIndexTaskRunner.getRecords(IncrementalPublishingKafkaIndexTaskRunner.java:111) ~[?:?]
+	at org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner.runInternal(SeekableStreamIndexTaskRunner.java:633) [druid-indexing-service-0.17.0.jar:0.17.0]
+	at org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner.run(SeekableStreamIndexTaskRunner.java:278) [druid-indexing-service-0.17.0.jar:0.17.0]
+	at org.apache.druid.indexing.seekablestream.SeekableStreamIndexTask.run(SeekableStreamIndexTask.java:164) [druid-indexing-service-0.17.0.jar:0.17.0]
+	at org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner$SingleTaskBackgroundRunnerCallable.call(SingleTaskBackgroundRunner.java:419) [druid-indexing-service-0.17.0.jar:0.17.0]
+	at org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner$SingleTaskBackgroundRunnerCallable.call(SingleTaskBackgroundRunner.java:391) [druid-indexing-service-0.17.0.jar:0.17.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_232]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_232]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_232]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_232]
+Caused by: java.lang.InterruptedException
+	... 20 more
+2020-05-13T04:38:30,099 INFO [Curator-Framework-0] org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+2020-05-13T04:38:30,110 INFO [main-EventThread] org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x10000a265a40007
+2020-05-13T04:38:30,109 INFO [Thread-70] org.apache.zookeeper.ZooKeeper - Session: 0x10000a265a40007 closed
+2020-05-13T04:38:30,111 INFO [Thread-70] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [INIT]
+2020-05-13T04:38:30,115 INFO [task-runner-0-priority-0] org.apache.druid.server.coordination.BatchDataSegmentAnnouncer - Unannouncing segment[transactions2_2020-05-13T03:00:00.000Z_2020-05-13T04:00:00.000Z_2020-05-13T03:52:35.353Z] at path[/druid/segments/172.19.0.9:8100/172.19.0.9:8100_indexer-executor__default_tier_2020-05-13T04:37:51.882Z_d2d182e1f9c446d282266a2bd95e342c0]
