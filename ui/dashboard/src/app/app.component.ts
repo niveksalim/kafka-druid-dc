@@ -10,6 +10,7 @@ import * as crossfilter from "crossfilter";
 })
 export class AppComponent implements OnInit {
   countryChart: dc.RowChart;
+  customerChart: dc.RowChart;
   data;
   all;
 
@@ -23,23 +24,53 @@ export class AppComponent implements OnInit {
       .subscribe((result: any) => {
         this.data = crossfilter(result);
         this.all = this.data.groupAll();
-        this.drawCharts();
+        this.drawCountryChart();
+        this.drawCustomerChart();
+        this.render();
       });
   }
 
-  resetSettlementChart(): void {}
+  resetCountryChart(): void {
+    this.countryChart.filterAll();
+    dc.redrawAll();
+  }
 
-  drawCharts(): void {
+  drawCountryChart(): void {
     this.countryChart = dc.rowChart("#countryChart");
     const countryDim = this.data.dimension(d => {
       return d.Country;
     });
     const countryGroup = countryDim.group();
     this.countryChart
+      .cap(10)
+      .width(500)
+      .height(300)
       .dimension(countryDim)
       .group(countryGroup)
       .elasticX(true);
+  }
 
+  resetCustomerChart(): void {
+    this.customerChart.filterAll();
+    dc.redrawAll();
+  }
+
+  drawCustomerChart(): void {
+    this.customerChart = dc.rowChart("#customerChart");
+    const customerDim = this.data.dimension(d => {
+      return d.sum_CustomerID;
+    });
+    const customerGroup = customerDim.group();
+    this.customerChart
+      .cap(10)
+      .width(500)
+      .height(300)
+      .dimension(customerDim)
+      .group(customerGroup)
+      .elasticX(true);
+  }
+
+  render(): void {
     dc.renderAll();
   }
 }
